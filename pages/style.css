@@ -19,6 +19,10 @@ nav{
     text-align: center;
 }
 
+.navbar{
+    z-index: 3;
+}
+
 .navbar-brand span{
     color: #333;
 }
@@ -118,9 +122,15 @@ footer a{
     text-align: justify;
 }
 
-.contenedorImagenAgro{
+.contQuienesSomos{
     padding-top: 20px;
 }
+
+.imagenAgroIndex{
+    height: 300px;
+    width: 500px;
+}
+
 .cont2Quienes{
     padding-left: 40px;
 }
@@ -341,6 +351,15 @@ h1{
             "ft6";
     }
     
+}
+
+@media only screen and (max-width:759px){
+    .contQuienesSomos{
+        visibility: hidden;
+    }
+    .historia{
+        border: none;
+    }
 }
 
 @media only screen and (max-width:1015px){
