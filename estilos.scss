@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*VARIABLES FUENTES*/
+$body-font:"Inter", sans-serif;
+
+/*VARIABLES COLORES*/
+$nav-fondo: #fc8020;
+$icono-hamburguesa-bg: #333;
+$menu-links: #1f1f1f;
+$menu-bg: rgba(18, 17, 17, 0.919);
 
 *{
     padding: 0;
@@ -8,15 +16,21 @@
 
 body{
     overflow: auto;
-    font-family: "Inter", sans-serif;
+    font-family: $body-font;
 }
 
 nav{
     width: 100%;
     height:50px;
-    background-color: #fc8020;
+    background-color: $menu-links;
     font-size: 18px;
     text-align: center;
+
+        a:hover:not(.navbar-brand){
+            color: blanchedalmond;
+            transform:translateY(-10px) scale(1.2); 
+            transition: all 0.3s;
+        }
 }
 
 .navbar{
@@ -24,13 +38,7 @@ nav{
 }
 
 .navbar-brand span{
-    color: #333;
-}
-
-nav a:hover:not(.navbar-brand){
-    color: blanchedalmond;
-    transform:translateY(-10px) scale(1.2); 
-    transition: all 0.3s;
+    color: $icono-hamburguesa-bg;
 }
 
 
@@ -39,7 +47,7 @@ nav a:hover:not(.navbar-brand){
 }
 
 .navbar-nav .nav-item .nav-link {
-    color:#1f1f1f; 
+    color: $menu-links; 
 }
 
 
@@ -100,28 +108,28 @@ iframe{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-footer a{
-    color: whitesmoke;
-}
 
+        a{
+           color: whitesmoke;
+        }
+}
 
 .historia{
     padding: 30px;
     border: black 2px solid;
     border-radius: 10%;
     margin-bottom: 20px;
-}
 
-.historia h2{
-    text-align: center ;
-    padding-bottom: 50px;
-}
+        h2{
+            text-align: center ;
+            padding-bottom: 50px;
+        }
 
-.historia p{
-    text-align: justify;
+        p{
+            text-align: justify;
+        }
+        
 }
-
 .contQuienesSomos{
     padding-top: 20px;
 }
@@ -233,19 +241,18 @@ h1{
     width: 50%;
     text-align: center;
     border-right: 3px black solid;
-}
 
-.conteiner1 h3{
-    padding-top: 30px;
+        h3{
+            padding-top: 30px;
+        }
 }
 
 .conteiner2{
     width: 50%;
     align-self: center;
-}
-
-.conteiner2 img{
-    width: auto;
+        img{
+            width: auto;
+        }
 }
 /*Inicio Sesion*/
 
@@ -255,27 +262,26 @@ h1{
     background-color: #333;
     height: 100vh;
     border-radius: 20px;
-}
 
-.conteiner h1{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: beige;
-}
-.conteiner input{
-    width: 250px;
-    height: 20px;
-    margin-top: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 15px 10px 10px ;
-}
+        h1{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: beige;
+        }
+        input{
+            width: 250px;
+            height: 20px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 15px 10px 10px ;
+        }
+        input:focus{
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
 
-.conteiner input:focus{
-    transform: scale(1.2);
-    transition: all 0.3s;
 }
-
 
 .btnInicio:active{
     transform: scale(1.2); 
@@ -283,15 +289,15 @@ h1{
 }
 
 .dropdown-menu{
-    background-color: #1f1f1f;
+    background-color: $menu-bg
 }
 
 .dropdown-item{
-    color: #fc8020;
+    color: $nav-fondo
 }
 
 .dropdown-item:hover{
-    background-color:#1f1f1f;
+    background-color: $menu-links;
     border-radius: 10px;
 }
 
@@ -305,10 +311,9 @@ h1{
 
     nav i{
         visibility: visible;
-    }
-
-    nav i:hover{
-        color: #1f1f1f;
+            i:hover{
+                color: $menu-bg;
+            }
     }
 
     footer{
@@ -371,7 +376,7 @@ h1{
 
 @media only screen and (max-width:991px) {
     .navbar-collapse{
-        background-color: rgba(18, 17, 17, 0.919);
+        background-color: $menu-bg;
     }
     .navbar-nav .nav-item .nav-link {
         color:antiquewhite; 
