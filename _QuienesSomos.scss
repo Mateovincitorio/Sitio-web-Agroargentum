@@ -1,0 +1,65 @@
+.historia{
+    padding: 30px;
+    border: black 2px solid;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+        h2{
+            text-align: center ;
+            padding-bottom: 50px;
+        }
+
+        p{
+            text-align: justify;
+        }
+        
+}
+.cont1quienesSomos{
+    padding-top: 20px;
+    margin-top: 82px;
+        h3{
+            text-align: center;
+        }
+        p{
+            padding-top: 50px;
+        }
+}
+
+
+.cont2Quienes{
+    padding-left: 40px;
+}
+
+@media only screen and (max-width:759px){
+    .cont1quienesSomos{
+        margin-top: 350px;
+    }
+    .cont2Quienes{
+        margin-top: 350px;
+    }
+
+    .historia{
+        border: none;
+    }
+}
+
+@media only screen and (min-width:360px) and (max-width:759px){
+
+    .quienesSomos{
+        padding-top: 200px;
+    }
+
+    .historia{
+        flex-direction: column;
+        margin-top: -300px;
+    }    
+    .imagenAgro{
+        display: none;
+    }
+}
+
+.quienesSomos{
+    z-index: 1;
+    text-align: center;
+}

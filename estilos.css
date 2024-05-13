@@ -41,14 +41,6 @@ nav a:hover:not(.navbar-brand) {
   color: #1f1f1f;
 }
 
-.logo {
-  position: relative;
-  top: -5px;
-  width: 150px;
-  padding-left: 20px;
-  float: inline-start;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -59,14 +51,6 @@ footer a:hover {
 }
 
 /*INICIO QUIENES SOMOS*/
-.quienesSomos {
-  z-index: 1;
-  position: relative;
-  top: 50px;
-  text-align: center;
-  padding-top: 25px;
-}
-
 h2 {
   padding-left: 20px;
   margin-top: 100px;
@@ -98,33 +82,52 @@ iframe {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .footer a {
   color: whitesmoke;
 }
 
-.historia {
-  padding: 30px;
-  border: black 2px solid;
-  border-radius: 10%;
-  margin-bottom: 20px;
-}
-.historia h2 {
+h1 {
+  padding-top: 100px;
   text-align: center;
-  padding-bottom: 50px;
-}
-.historia p {
-  text-align: justify;
 }
 
-.contQuienesSomos {
-  padding-top: 20px;
+.dropdown-menu {
+  background-color: rgba(18, 17, 17, 0.919);
 }
 
-.cont2Quienes {
-  padding-left: 40px;
+.dropdown-item {
+  color: #fc8020;
 }
 
-/*INICIO PRODUCTOS*/
+.dropdown-item:hover {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+/*INICIO MEDIA QUERIES*/
+@media only screen and (max-width: 917px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    visibility: visible;
+  }
+  nav i i:hover {
+    color: rgba(18, 17, 17, 0.919);
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(18, 17, 17, 0.919);
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: antiquewhite;
+  }
+}
 .productosh1 {
   padding-top: 20px;
   position: relative;
@@ -194,41 +197,18 @@ iframe {
   background-size: cover;
 }
 
-/*INICIO CONTACTO*/
-h1 {
-  padding-top: 100px;
-  text-align: center;
+@media only screen and (min-width: 360px) and (max-width: 759px) {
+  .containerFotos {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "ft1" "ft2" "ft3" "ft4" "ft5" "ft6";
+  }
+  .containerFotos .foto3 {
+    height: auto;
+  }
+  .containerFotos .foto6 {
+    height: auto;
+  }
 }
-
-.container-contacto {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-bottom: 200px;
-  margin-top: 100px;
-}
-
-.conteiner1 {
-  align-self: center;
-  width: 50%;
-  text-align: center;
-  border-right: 3px black solid;
-}
-.conteiner1 h3 {
-  padding-top: 30px;
-}
-
-.conteiner2 {
-  width: 50%;
-  align-self: center;
-}
-.conteiner2 img {
-  width: auto;
-}
-
-/*Inicio Sesion*/
 .conteiner {
   margin-top: 50px;
   padding: 30px;
@@ -259,32 +239,87 @@ h1 {
   transition: all 0.3s;
 }
 
-.dropdown-menu {
-  background-color: rgba(18, 17, 17, 0.919);
+.container-contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 200px;
+  margin-top: 100px;
 }
 
-.dropdown-item {
-  color: #fc8020;
+.conteiner1 {
+  align-self: center;
+  width: 50%;
+  text-align: center;
+  border-right: 3px black solid;
+}
+.conteiner1 h3 {
+  padding-top: 30px;
 }
 
-.dropdown-item:hover {
-  background-color: #1f1f1f;
-  border-radius: 10px;
+.conteiner2 {
+  width: 50%;
+  align-self: center;
+}
+.conteiner2 img {
+  width: auto;
 }
 
-/*INICIO MEDIA QUERIES*/
-@media only screen and (max-width: 917px) {
-  nav ul {
+h1 {
+  padding-top: 100px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1015px) {
+  .conteiner1 {
+    border: none;
+    width: 100%;
+  }
+  .conteiner2 {
     display: none;
   }
-  nav i {
-    visibility: visible;
+}
+.historia {
+  padding: 30px;
+  border: black 2px solid;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.historia h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.historia p {
+  text-align: justify;
+}
+
+.cont1quienesSomos {
+  padding-top: 20px;
+  margin-top: 82px;
+}
+.cont1quienesSomos h3 {
+  text-align: center;
+}
+.cont1quienesSomos p {
+  padding-top: 50px;
+}
+
+.cont2Quienes {
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 759px) {
+  .cont1quienesSomos {
+    margin-top: 350px;
   }
-  nav i i:hover {
-    color: rgba(18, 17, 17, 0.919);
+  .cont2Quienes {
+    margin-top: 350px;
   }
-  footer {
-    flex-direction: column;
+  .historia {
+    border: none;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 759px) {
@@ -295,39 +330,11 @@ h1 {
     flex-direction: column;
     margin-top: -300px;
   }
-  .containerFotos {
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "ft1" "ft2" "ft3" "ft4" "ft5" "ft6";
-  }
-  .containerFotos .foto3 {
-    height: auto;
-  }
-  .containerFotos .foto6 {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 759px) {
-  .contQuienesSomos {
-    visibility: hidden;
-  }
-  .historia {
-    border: none;
-  }
-}
-@media only screen and (max-width: 1015px) {
-  .conteiner1 {
-    border: none;
-    width: 100%;
-  }
-  .conteiner2 {
+  .imagenAgro {
     display: none;
   }
 }
-@media only screen and (max-width: 991px) {
-  .navbar-collapse {
-    background-color: rgba(18, 17, 17, 0.919);
-  }
-  .navbar-nav .nav-item .nav-link {
-    color: antiquewhite;
-  }
+.quienesSomos {
+  z-index: 1;
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

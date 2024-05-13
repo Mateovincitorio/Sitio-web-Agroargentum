@@ -1,0 +1,5 @@
+1-modifiqué los titulos de las paginas.
+2-agregué meta keywords.
+3-agregué meta description.
+4-agregué alts a las imagenes.
+5- modifiqué algunos encabezados de las pagina.
