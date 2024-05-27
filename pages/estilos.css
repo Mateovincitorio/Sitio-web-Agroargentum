@@ -1,134 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-/*VARIABLES FUENTES*/
-/*VARIABLES COLORES*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow: auto;
-  font-family: "Inter", sans-serif;
-}
-
-nav {
-  width: 100%;
-  height: 50px;
-  background-color: #fc8020;
-  font-size: 18px;
-  text-align: center;
-}
-nav a:hover:not(.navbar-brand) {
-  color: blanchedalmond;
-  transform: translateY(-10px) scale(1.2);
-  transition: all 0.3s;
-}
-
-.navbar {
-  z-index: 3;
-}
-
-.navbar-brand span {
-  color: #333;
-}
-
-.nav-item {
-  margin-right: 10px;
-}
-
-.navbar-nav .nav-item .nav-link {
-  color: #1f1f1f;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-footer a:hover {
-  color: antiquewhite;
-}
-
-/*INICIO QUIENES SOMOS*/
-h2 {
-  padding-left: 20px;
-  margin-top: 100px;
-  padding-bottom: 10px;
-  font-size: 30px;
-}
-
-.mapa {
-  height: auto;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-iframe {
-  width: 100%;
-}
-
-.info .fa-location-dot {
-  float: inline-end;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #1f1f1f;
-  color: whitesmoke;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.footer a {
-  color: whitesmoke;
-}
-
-h1 {
-  padding-top: 100px;
-  text-align: center;
-  font-size: 40px;
-}
-
-.dropdown-menu {
-  background-color: rgba(18, 17, 17, 0.919);
-}
-
-.dropdown-item {
-  color: #fc8020;
-}
-
-.dropdown-item:hover {
-  background-color: #1f1f1f;
-  border-radius: 10px;
-}
-
-/*INICIO MEDIA QUERIES*/
-@media only screen and (max-width: 917px) {
-  nav ul {
-    display: none;
-  }
-  nav i {
-    visibility: visible;
-  }
-  nav i i:hover {
-    color: rgba(18, 17, 17, 0.919);
-  }
-  footer {
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .navbar-collapse {
-    background-color: rgba(18, 17, 17, 0.919);
-  }
-  .navbar-nav .nav-item .nav-link {
-    color: antiquewhite;
-  }
-}
 .productosh1 {
   padding-top: 20px;
   position: relative;
@@ -322,7 +192,6 @@ h1 {
 }
 
 @media only screen and (max-width: 759px) {
-  
   .cont1quienesSomos {
     margin-top: 350px;
   }
@@ -342,4 +211,135 @@ h1 {
 .quienesSomos {
   z-index: 1;
   text-align: center;
+}
+
+/*VARIABLES FUENTES*/
+/*VARIABLES COLORES*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #fc8020;
+  font-size: 18px;
+  text-align: center;
+}
+nav a:hover:not(.navbar-brand) {
+  color: blanchedalmond;
+  transform: translateY(-10px) scale(1.2);
+  transition: all 0.3s;
+}
+
+.navbar {
+  z-index: 3;
+}
+
+.navbar-brand span {
+  color: #333;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #1f1f1f;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: antiquewhite;
+}
+
+/*INICIO QUIENES SOMOS*/
+h2 {
+  padding-left: 20px;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.mapa {
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.info .fa-location-dot {
+  float: inline-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.dropdown-menu {
+  background-color: rgba(18, 17, 17, 0.919);
+}
+
+.dropdown-item {
+  color: #fc8020;
+}
+
+.dropdown-item:hover {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+/*INICIO MEDIA QUERIES*/
+@media only screen and (max-width: 917px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    visibility: visible;
+  }
+  nav i i:hover {
+    color: rgba(18, 17, 17, 0.919);
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(18, 17, 17, 0.919);
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: antiquewhite;
+  }
 }/*# sourceMappingURL=estilos.css.map */

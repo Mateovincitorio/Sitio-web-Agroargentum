@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "_productos";
+@import "_inicioSesion";
+@import "_contacto";
+@import "_QuienesSomos";
+
 /*VARIABLES FUENTES*/
 $body-font:"Inter", sans-serif;
 
@@ -65,10 +70,10 @@ nav{
 
 a{
     text-decoration: none;
-     color: black;
+    color: black;
 }
 
- footer a:hover{
+footer a:hover{
     color: antiquewhite;
 }
 
@@ -102,13 +107,12 @@ iframe{
 
 .footer a{
         color: whitesmoke;
-}
-
-
+        }
 
 h1{
     padding-top: 100px;
     text-align: center;
+    font-size: 40px;
 }
 
 
@@ -154,7 +158,3 @@ h1{
         color:antiquewhite; 
     }
 }
-@import "_productos";
-@import "_inicioSesion";
-@import "_contacto";
-@import "_QuienesSomos";
