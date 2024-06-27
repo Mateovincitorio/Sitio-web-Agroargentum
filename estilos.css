@@ -81,6 +81,8 @@ iframe {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+  bottom: 0;
 }
 
 .footer a {
@@ -136,7 +138,7 @@ h1 {
   text-align: center;
 }
 
-.containerFotos {
+/*.containerFotos {
   margin-top: 100px;
   display: grid;
   width: 100%;
@@ -211,7 +213,7 @@ h1 {
   .containerFotos .foto6 {
     height: auto;
   }
-}
+}*/
 .conteiner {
   margin-top: 50px;
   padding: 30px;
