@@ -124,6 +124,7 @@ h1 {
   }
 }
 @media only screen and (max-width: 991px) {
+  
   .navbar-collapse {
     background-color: rgba(18, 17, 17, 0.919);
   }
@@ -138,87 +139,9 @@ h1 {
   text-align: center;
 }
 
-/*.containerFotos {
-  margin-top: 100px;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-areas: "ft1 ft2 ft2" "ft1 ft2 ft2" "ft1 ft4 ft5" "ft6 ft4 ft3";
-  gap: 20px;
-  margin-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.img-productos {
-  border: 2px solid black;
-  width: 100%;
-}
-
-.foto1 {
-  grid-area: ft1;
-  background-image: url(./pages/contenido/imagenes/maiz.jpg);
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-}
-
-.foto2 {
-  grid-area: ft2;
-  background-image: url(./pages/contenido/imagenes/vacas.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.foto3 {
-  grid-area: ft3;
-  background-image: url(./pages/contenido/imagenes/pollitos.jpg);
-  height: 100px;
-  background-position: center;
-  background-size: cover;
-}
-
-.foto4 {
-  grid-area: ft4;
-  background-image: url(./pages/contenido/imagenes/expeller-de-soja.gif);
-  height: auto;
-  background-position: center;
-  background-size: cover;
-}
-
-.foto5 {
-  grid-area: ft5;
-  background-image: url(./pages/contenido/imagenes/soja.jpg);
-  height: auto;
-  background-position: center;
-  background-size: cover;
-}
-
-.foto6 {
-  grid-area: ft6;
-  background-image: url(./pages/contenido/imagenes/pellet\ de\ trigo.jpg);
-  height: 100px;
-  background-position: center;
-  background-size: cover;
-}
-
-@media only screen and (min-width: 360px) and (max-width: 759px) {
-  .containerFotos {
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "ft1" "ft2" "ft3" "ft4" "ft5" "ft6";
-  }
-  .containerFotos .foto3 {
-    height: auto;
-  }
-  .containerFotos .foto6 {
-    height: auto;
-  }
-}*/
 .conteiner {
   margin-top: 50px;
   padding: 30px;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #63676b 100px), repeating-linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19));
-  background-color: #63676b;
   height: auto;
   border-radius: 20px;
   width: auto;
@@ -226,12 +149,13 @@ h1 {
 .conteiner h1 {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: beige;
+  color: rgb(0, 0, 0);
 }
 .conteiner input {
   width: 250px;
   height: auto;
   margin-top: 40px;
+  margin-bottom:40px ;
   text-align: center;
   border-radius: 10px;
   box-shadow: 15px 10px 10px;
@@ -252,6 +176,13 @@ h1 {
 
 .container {
   height: 100vh;
+}
+
+.mensaje{
+  height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 15px 10px 10px;
 }
 
 .contenedorContacto {
@@ -345,3 +276,45 @@ h1 {
   z-index: 1;
   text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
+
+.nav-item{
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.nav-item:nth-child(2){
+  animation-delay:0.5s;
+}
+.nav-item:nth-child(3){
+  animation-delay:1s;
+}
+.nav-item:nth-child(4){
+  animation-delay:1.3s;
+}
+.nav-item:nth-child(5){
+  animation-delay:1.6s;
+}
+.nav-item:nth-child(6){
+  animation-delay:1.9s;
+}
+
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
