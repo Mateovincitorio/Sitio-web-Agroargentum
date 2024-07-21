@@ -123,6 +123,7 @@ h1 {
     flex-direction: column;
   }
 }
+
 @media only screen and (max-width: 991px) {
   
   .navbar-collapse {
@@ -200,14 +201,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  width: 80vw;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 60vh;
+  width: 80%;
 }
 
 .imagen-index img{
-  margin-left:40%;
-  width: 80%;
-  height: 80%;
+  margin-left:30%;
+  width: 20rem;
+  height: 10rem;
 }
 
 .conteiner1 {
@@ -296,19 +299,22 @@ h1 {
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 .nav-item:nth-child(2){
-  animation-delay:0.5s;
+  animation-delay:0.3s;
 }
 .nav-item:nth-child(3){
-  animation-delay:1s;
+  animation-delay:0.6s;
 }
 .nav-item:nth-child(4){
-  animation-delay:1.3s;
+  animation-delay:1s;
 }
 .nav-item:nth-child(5){
-  animation-delay:1.6s;
+  animation-delay:1.3s;
 }
 .nav-item:nth-child(6){
-  animation-delay:1.9s;
+  animation-delay:1.6s;
+}
+.nav-item:nth-child(7){
+  animation-delay:1.9s ;
 }
 
 @keyframes slide-in-blurred-top {
