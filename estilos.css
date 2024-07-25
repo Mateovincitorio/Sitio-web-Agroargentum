@@ -41,6 +41,15 @@ nav a:hover:not(.navbar-brand) {
   color: #1f1f1f;
 }
 
+.icon{
+  margin-right: 20px;
+}
+
+.icon:hover{
+  color: #4a4949;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -151,7 +160,6 @@ h1 {
 .conteiner h1 {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: rgb(0, 0, 0);
 }
 .conteiner input {
   width: 250px;
