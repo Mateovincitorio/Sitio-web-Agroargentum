@@ -6,6 +6,7 @@
   text-align: center;
 }
 
+
 .conteiner {
   margin-top: 50px;
   padding: 30px;
@@ -24,7 +25,6 @@
   margin-top: 40px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 15px 10px 10px;
 }
 .conteiner input:focus {
   transform: scale(1.2);
@@ -146,18 +146,7 @@ h1 {
 body {
   overflow: auto;
   font-family: "Inter", sans-serif;
-  transition: all ease-in-out 0.5s;
 }
-
-.icon{
-  margin-right: 20px;
-}
-
-.icon:hover{
-  color: #4a4949;
-  cursor: pointer;
-}
-
 
 nav {
   width: 100%;
@@ -275,4 +264,16 @@ h1 {
   .navbar-nav .nav-item .nav-link {
     color: antiquewhite;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  .icon{
+    color: antiquewhite;
+  }
+  
+  .icon:hover{
+    color: #a3a0a0;
+    cursor: pointer;
+  }
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */

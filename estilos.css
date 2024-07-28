@@ -43,11 +43,20 @@ nav a:hover:not(.navbar-brand) {
 
 .icon{
   margin-right: 20px;
+  color: #1f1f1f;
 }
 
 .icon:hover{
   color: #4a4949;
   cursor: pointer;
+}
+
+.luna-icon{
+  color:aliceblue;
+}
+
+.luna-icon:hover{
+  color:rgb(100, 101, 102);
 }
 
 a {
@@ -276,9 +285,9 @@ h1 {
   padding-top: 50px;
 }
 
-.cont2Quienes {
+/*.cont2Quienes {
   padding-left: 40px;
-}
+}*/
 
 @media only screen and (max-width: 759px) {
   
@@ -344,6 +353,10 @@ h1 {
             filter: blur(0);
     opacity: 1;
   }
+}
+
+li{
+  list-style-type:none;
 }
 
 
