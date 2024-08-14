@@ -21,7 +21,34 @@
   cursor: pointer;
 }
 
-    .my-card {
+.my-card {
+  width: 100%; /* Cambia el ancho a 100% para que la card se ajuste al contenedor */
+  max-width: 400px; /* Máximo ancho */
+  filter: sepia(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 20px; /* Reduce el padding */
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .my-card {
+    padding: 10px; /* Reduce el padding aún más en pantallas pequeñas */
+    box-shadow: none; /* Elimina o reduce la sombra para pantallas pequeñas */
+  }
+
+  .my-card img {
+    width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+  }
+
+  .my-card h5 {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente para que sea más pequeño */
+  }
+
+  .my-card p {
+    font-size: 1rem; /* Ajusta el tamaño de la fuente del texto */
+  }
+}
+  /*  .my-card {
   width: 400px;
   filter: sepia(1);
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -51,7 +78,7 @@
 
 .my-card h5{
   color: #000;
-}
+}*/
   </style>
   
   <nav class="navbar navbar-expand-lg bg-orange navbar-dark justify-content-center">
