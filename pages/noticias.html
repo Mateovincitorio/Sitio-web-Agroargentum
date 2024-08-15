@@ -29,6 +29,13 @@
   padding: 20px; /* Reduce el padding */
 }
 
+.my-card:hover {
+  transform: scale(1.05);
+  filter: sepia(0.5);
+  box-shadow: #000 20px 20px 30px;
+  color: #000;
+}
+
 /* Ajustes específicos para pantallas pequeñas */
 @media (max-width: 576px) {
   .my-card {
@@ -48,37 +55,6 @@
     font-size: 1rem; /* Ajusta el tamaño de la fuente del texto */
   }
 }
-  /*  .my-card {
-  width: 400px;
-  filter: sepia(1);
-  transition: transform 0.3s ease, filter 0.3s ease;
-  padding: 40px;
-}
-.my-card img{
-  filter: sepia(1);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.my-card:hover {
-  transform: scale(1.05);
-  filter: sepia(0.5);
-  box-shadow: #000 20px 20px 30px;
-  color: #000;
-}
-
-.my-card img {
-            transition: transform 0.3s ease, filter 0.3s ease;
-        }
-
-.my-card:hover img {
-            transform: scale(1.1);
-            filter: brightness(0.8);
-        }
-
-
-.my-card h5{
-  color: #000;
-}*/
   </style>
   
   <nav class="navbar navbar-expand-lg bg-orange navbar-dark justify-content-center">
