@@ -7,9 +7,11 @@ let body = document.body;
 let mapa = document.getElementById("mapa");
 let enlaces = document.querySelectorAll("#enlace1, #enlace2, #enlace3");
 const modoOscuro = document.getElementById("darkMode");
-localStorage.setItem('darkMode', 'activo')
+localStorage.setItem('darkMode', 'inactivo')
 
-if(localStorage.getItem("darkMode") === "activo"){
+if(localStorage.getItem("darkMode") === "inactivo"){
+    document.body.classList.remove("dark-Mode")
+}else{
     document.body.classList.add("dark-Mode")
 }
 
