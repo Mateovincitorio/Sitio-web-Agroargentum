@@ -17,6 +17,10 @@ body {
   color: blanchedalmond;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+.luna{
+  margin-top: 8rem;
+  text-align: center;
+}
 
 nav {
   width: 100%;
