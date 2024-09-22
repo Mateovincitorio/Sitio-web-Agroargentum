@@ -13,15 +13,28 @@
 
 <style>
     .carousel-item img {
-      width: 90%;
-      max-width: 90%;
-      height: 695px;
+      width: 100%;
+      max-width: 1000px;
+      height: 600px;
       margin: 150px auto;
   }
 
   .carousel {
       width: 100%;
       margin: 0 auto;
+  }
+  @media only screen and (min-width: 480px) and (max-width: 1008px) {
+    .carousel-item img {
+      width: 100%;
+      max-width: 80%;
+      height: 40%;
+      margin: 50% auto;
+  }
+
+  .carousel {
+      width: 100%;
+      margin: 0 auto;
+  }
   }
   
 </style>
