@@ -1,11 +1,11 @@
 let mapa = document.getElementById("mapa");
 let enlaces = document.querySelectorAll("#enlace1, #enlace2, #enlace3");
 const modoOscuro = document.getElementById("darkMode");
-localStorage.setItem('darkMode', 'activo')
+
 
 if(localStorage.getItem("darkMode") === "activo"){
     document.body.classList.add("dark-Mode")
-}
+} 
 
 modoOscuro.addEventListener("click", () =>{
     if (document.body.classList.contains("dark-Mode")) {
