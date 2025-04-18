@@ -6,7 +6,6 @@
   text-align: center;
 }
 
-
 .conteiner {
   margin-top: 50px;
   padding: 30px;
@@ -264,16 +263,4 @@ h1 {
   .navbar-nav .nav-item .nav-link {
     color: antiquewhite;
   }
-  .icon{
-    color: antiquewhite;
-  }
-  
-  .icon:hover{
-    color: #a3a0a0;
-    cursor: pointer;
-  }
-}
-
-
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
