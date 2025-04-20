@@ -212,8 +212,11 @@ h1 {
   transition: all 0.3s;
 }
 
-.btnInicio {
-  margin-bottom: 10px;
+
+
+.btnInicioInput{
+  background-color: #fc7f20b9;
+  color: rgb(182, 182, 182);
 }
 
 .btnInicio:active {
