@@ -174,7 +174,7 @@ h1 {
   text-align: center;
 }
 
-.conteiner {
+/*.conteiner {
   display: block;
   justify-self:center ;
   margin-top: 50px;
@@ -184,14 +184,14 @@ h1 {
   width: 50%;
   border: gray solid 2px;
   background-color: rgba(124, 125, 125, 0.122);
-}
+}*/
 
 
 
 .form{
   border: grey solid 2px;
   border-radius: 20px;
-  background-color: inherit;
+  background-color: rgba(177, 175, 175, 0.337);
 }
 
 .conteiner h1 {
@@ -216,6 +216,10 @@ h1 {
 
 .btnInicioInput{
   background-color: #fc7f20b9;
+  color: #1f1f1f;
+}
+
+body.dark-Mode .form input[type="submit"]{
   color: rgb(182, 182, 182);
 }
 
