@@ -2,6 +2,8 @@
 /*VARIABLES FUENTES*/
 /*VARIABLES COLORES*/
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -198,7 +200,11 @@ body.dark-Mode .form{
   transition: all 0.3s;
 }
 
-
+.hablemos{
+  font-family: "Playwrite RO", cursive;
+  font-size: 30px;
+  padding-bottom: 2%;
+}
 
 .btnInicioInput{
   background-color: #fc7f20b9;
