@@ -174,24 +174,10 @@ h1 {
   text-align: center;
 }
 
-/*.conteiner {
-  display: block;
-  justify-self:center ;
-  margin-top: 50px;
-  padding: 30px;
-  height: auto;
-  border-radius: 20px;
-  width: 50%;
-  border: gray solid 2px;
-  background-color: rgba(124, 125, 125, 0.122);
-}*/
-
-
-
-.form{
+body.dark-Mode .form{
   border: grey solid 2px;
   border-radius: 20px;
-  background-color: rgba(177, 175, 175, 0.337);
+  background-color: rgba(78, 77, 77, 0.337);
 }
 
 .conteiner h1 {
