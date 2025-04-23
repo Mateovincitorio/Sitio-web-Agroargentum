@@ -182,6 +182,14 @@ body.dark-Mode .form{
   background-color: rgba(78, 77, 77, 0.337);
 }
 
+.flecha {
+  filter: invert(100%);
+}
+
+body.dark-Mode .flecha{
+  filter: invert(0);
+}
+
 .conteiner h1 {
   padding-top: 30px;
   padding-bottom: 30px;
