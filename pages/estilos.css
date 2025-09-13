@@ -214,7 +214,115 @@ h1 {
   background-color: #1f1f1f;
   border-radius: 10px;
 }
+.dark-Mode{
+  background-color: black;
+  color: blanchedalmond;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  }
 
+.card-body{
+  color: #000;
+}
+
+  .icon{
+  margin-right: 20px;
+}
+
+.icon:hover{
+  color: #4a4949;
+  cursor: pointer;
+}
+
+.my-card {
+  width: 100%; /* Cambia el ancho a 100% para que la card se ajuste al contenedor */
+  max-width: 400px; /* Máximo ancho */
+  filter: sepia(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 20px; /* Reduce el padding */
+}
+.luna-icon{
+  color:aliceblue;
+}
+
+.luna-icon:hover{
+  color:rgb(100, 101, 102);
+}
+
+li{
+  list-style-type:none;
+}
+
+.my-card:hover {
+  transform: scale(1.05);
+  filter: sepia(0.5);
+  box-shadow: #000 20px 20px 30px;
+  color: #000;
+}
+
+
+@media (max-width: 576px) {
+  .my-card {
+    padding: 10px; 
+    box-shadow: none; 
+  }
+
+  .my-card img {
+    width: 100%;
+  }
+
+  .my-card h5 {
+    font-size: 1.2rem; 
+  }
+
+  .my-card p {
+    font-size: 1rem; 
+  }
+}
+.carousel-item img {
+      max-width: 1000px;
+      height: 500px;
+      margin: 100px auto;
+      border-radius: 5%;
+  }
+
+  .carousel {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .label{
+    margin-top: -50px;
+    text-align: center;
+  }
+
+  .parrafo{
+    text-align: center;
+  }
+
+  .carousel-inner{
+    height: 5%;
+    width: 100%;
+  }
+
+
+  
+  @media only screen and (min-width: 480px) and (max-width: 1008px) {
+    .carousel-item img {
+      width: 100%;
+      max-width: 80%;
+      height: 40%;
+      margin: 80px auto;
+  }
+  h1{
+    font-size: 2rem;
+  }
+
+  .carousel {
+      width: 100%;
+      margin: 0 auto;
+  }
+  }
+  
 /*INICIO MEDIA QUERIES*/
 @media only screen and (max-width: 917px) {
   nav ul {
@@ -265,4 +373,20 @@ h1 {
   .imagenAgro {
     display: none;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+@media only screen and (min-width: 480px) and (max-width: 1008px) {
+    .carousel-item img {
+      width: 100%;
+      max-width: 80%;
+      height: 40%;
+      margin: 80px auto;
+  }
+  h1{
+    font-size: 2rem;
+  }
+
+  .carousel {
+      width: 100%;
+      margin: 0 auto;
+  }
+  }/*# sourceMappingURL=estilos.css.map */
